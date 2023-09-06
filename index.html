@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Chatbot</title>
+    <link rel="stylesheet" href="/styles.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400&display=swap" rel="stylesheet">
+<script src="https://use.fontawesome.com/228b623108.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+</head>
+<body>
+    
+    <section id="banner">
+
+        <header>
+            <div class="navbar">
+                <div class="logo">
+                    <a href="#banner">Mental Health Chatbot</a>
+                </div>
+
+                <nav>
+                    <img src="/svgs/close-1214340.svg" alt="" class="close">
+                    <ul class="links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </nav>
+
+                <img src="/svgs/menu-2056086.svg" alt="" class="menu">
+            </div>
+        </header>
+
+        <div class="content">
+            <div class="con-text">
+                <h1>Meet Tiki</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, illum.</p>
+                <a href="/login.html" target="_blank" class="btn">CHAT WITH ME</a>
+            </div>
+            <div class="con-img">
+                <img src="/svgs/handy-rating.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="about">
+        <div class="title">
+            <h1>About Us</h1>
+        </div>
+
+        <div class="about">
+            <div class="about-text">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui voluptatem voluptate consequatur dolorum reiciendis minima numquam dolor hic adipisci asperiores? Aperiam nulla illum nesciunt dolor excepturi est. Perferendis molestiae id, alias quidem modi iste provident voluptates? Cumque cupiditate aliquam deserunt velit quasi consequuntur id sit eius, molestias iure. Deserunt, molestias?</p>
+            </div>
+            <div class="about-img">
+                <img src="/svgs/DrawKit Vector Illustration Mental Health (3).svg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section id="features">
+        <div class="title">
+            <h1>Features</h1>
+        </div>
+
+        <div class="features">
+            <div class="feat-con">
+                <img src="/svgs/DrawKit Vector Illustration Mental Health (3).svg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis aspernatur deserunt doloribus quam officiis hic inventore sed, reprehenderit qui illo.</p>
+            </div>
+            <div class="feat-con">
+                <img src="/svgs/DrawKit Vector Illustration Mental Health (4).svg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis aspernatur deserunt doloribus quam officiis hic inventore sed, reprehenderit qui illo.</p>
+            </div>
+            <div class="feat-con">
+                <img src="/svgs/DrawKit Vector Illustration Mental Health (6).svg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis aspernatur deserunt doloribus quam officiis hic inventore sed, reprehenderit qui illo.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="title con-tit">
+            <h1>Contact Us</h1>
+        </div>
+
+        <div class="contact-con">
+            <div class="links">
+                <P><i class="fa fa-map-marker"></i>University of Jos, Bauchi Road</P>
+                <p><i class="fa fa-envelope"></i>mentalhealth.com</p>
+                <p><i class="fa fa-phone"></i>+234 1234567890</p>
+            </div>
+
+
+            <div class="form">
+            <!-- <h3>Login Here</h3> -->
+                <input type="email" name="" id="" placeholder="enter email">
+                <input type="password" name="" id="" placeholder="enter password">
+                <textarea name="description" id="" placeholder="enter your suggestion,complaint and question" cols="38" rows="5"></textarea>
+                <button class="btnn"><a href="#">Submit</a></button>
+
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <p class="footer">Mental Health Chat bot &copy; 2023</p>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script>
+        const menu = document.querySelector('.menu')
+        const close = document.querySelector('.close')
+        const nav = document.querySelector('nav')
+
+        menu.addEventListener('click', () => {
+            nav.classList.add('open-nav')
+        })
+        close.addEventListener('click', () => {
+            nav.classList.remove('open-nav')
+        })
+
+        var scroll = new SmoothScroll('a[href*="#"]', {
+	        speed: 1000,
+	        speedAsDuration: true
+        });
+    </script>
+</body>
+</html>

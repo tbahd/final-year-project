@@ -1,0 +1,436 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif; 
+}
+
+/* header and landing page */
+#banner{
+    background: #344e41;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 50;
+    background: #344e41;
+}
+.navbar{
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu{
+    width: 2.5rem;
+    cursor: pointer;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 2;
+}
+
+.logo a{
+    /* color: red; */
+    /* color: #809bce; */
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 500;
+}
+nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    /* left: 0; */
+    width: 50%;
+    height: 100vh;
+    /* background: #fff; */
+    background: #a3b18a;
+    transform: translateX(100%);
+    transition: .5s;
+    z-index: 5;
+    /* order: 1; */
+}
+nav ul{
+    margin-top: 5rem;
+}
+nav ul a{
+    padding: 1.5rem 1rem;
+    display: block;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    color: #344e41;
+    transition: .3s ease-in-out;
+    
+}
+.close{
+    width: 2rem;
+    float: right;
+    margin: 1rem;
+    cursor: pointer;
+}
+nav ul a:hover{
+    background: #fff;
+}
+.open-nav {
+    transform: translateX(0%);
+}
+
+
+.content{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    position: relative;
+    top: 57%;
+    transform: translateY(-50%);
+    text-align: center;
+    flex-wrap: wrap;
+    text-align: left;
+}
+.con-text {
+    flex-basis: 100%;
+}
+
+.con-text h1{
+    font-size: 3rem;
+    color: #fff;
+}
+
+.con-text p {
+    font-size: 1.1rem;
+    margin-top: .3rem;
+    color: #a3b18a;
+}
+.con-img {
+    flex-basis: 100%;
+    margin: auto;
+}
+
+.con-img img {
+    width: 100%;
+}
+
+.btn{
+    color: #344e41;
+    font-size: 1rem;
+    padding: .3rem .7rem;
+    border-radius: .5rem;
+    background-color: transparent;
+    cursor: pointer;
+    background: #fff;
+    margin-top: .5rem;
+    display: inline-block;
+}
+
+/* about page */
+#about{
+    max-width: 100%;
+    padding: 2rem 0;
+}
+
+.title{
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #344e41;
+    text-transform: uppercase;
+}
+.about{
+    max-width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.about-text{
+    flex-basis: 100%;
+}
+.about-img{
+    flex-basis: 100%;
+}
+.about-img img{
+    width: 100%;
+    margin: auto;
+}
+
+/* features page */
+#features{
+    max-width: 100%;
+    padding: 2rem 0;
+    background: #a3b18a;
+}
+.features{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: left;
+}
+.feat-con{
+    flex-basis: 100%;
+}
+.feat-con img{
+    width: 90%;
+}
+
+/* contact page */
+#contact{
+    max-width: 100%;
+    padding: 2rem 0;
+    background-color: #344e41;
+}
+.con-tit{
+    color: #fff;
+}
+.contact-con{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.links{
+    flex-basis: 100%;
+    margin-bottom: 2rem;
+}
+.links .fa{
+    font-size: 2rem;
+    text-align: center;
+    margin: .5rem;
+    color: #a3b18a;
+    padding: .3rem;
+}
+.links p{
+    font-size: 1.2rem;
+}
+.form{
+    text-align: left;
+    flex-basis: 100%;
+}
+.form input {
+    width: 100%;
+    background: #fff;
+    border: none;
+    outline: none;
+    color: black;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin-top: 1rem;
+    padding: 1rem;
+}
+.form textarea{
+    width: 100%;
+    margin-top: 1rem;
+    padding: 1rem;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+.btnn {
+    width: 100%;
+    background: #fff;
+    border: none;
+    margin: 1rem 0rem;
+    font-size: 18px;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: .4s ease;
+    padding: .5rem;
+}
+.btnn:hover {
+    background: #a3b18a;
+}
+
+.btnn a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.icons .fa{
+    font-size: 1.5rem;
+    margin: .3rem .4rem;
+    color: #a3b18a;
+    cursor: pointer;
+}
+footer {
+    background: #a3b18a;
+    text-align: center;
+    padding: .3rem 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVE HEADER AND MAIN CONTENT */
+@media screen and (min-width:800px) {
+    .menu {
+        display: none;
+    }
+
+    .close {
+        display: none;
+    }
+
+    nav {
+        position: fixed;
+        width: auto;
+        height: auto;
+        background: none;
+        transform: translateX(0%);
+    }
+
+    nav ul {
+        margin: 0;
+        display: flex;
+    }
+
+    nav ul a {
+        padding: 1rem;
+        display: inline-block;
+        color: rgb(250, 248, 214);
+        font-size: 1rem;
+    }
+
+    nav ul a:hover {
+        background: none;
+        transform: scale(1.1);
+        color: #a3b18a;
+    }
+
+    .content {
+        position: relative;
+        top: 50%;
+    }
+
+    .con-text {
+        flex-basis: 50%;
+    }
+
+    .con-img {
+        flex-basis: 50%;
+    }
+
+    .con-img img {
+        width: 80%;
+    }
+
+    /* .content-text img {
+        width: 25%;
+    } */
+
+    .con-text p {
+        font-size: 1.5rem;
+    }
+
+    .con {
+        padding-top: 3rem;
+    }
+
+    /* reponsive about page */
+    .about-text{
+        flex-basis: 60%;
+    }
+    .about-img{
+        flex-basis: 40%;
+    }
+    .about-img img{
+        width: 100%;
+    }
+    /* features page */
+    .feat-con{
+        flex-basis: 33%;
+    }
+    .feat-con img{
+        width: 100%;
+    }
+
+    /* contact */
+    .links{
+        flex-basis: 50%;
+    }
+    .form{
+        flex-basis: 50%;
+    }
+    .form input{
+        width: 450px;
+    }
+    .form textarea{
+        width: 450px;
+    }
+    .btnn{
+        width: 450px;
+    }
+    .links{
+        margin: 0;
+    }
+    .links p {
+        font-size: 1.5rem;
+    }
+}
+
+
